@@ -14,6 +14,6 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = new TextView(this);
         textView.setText("这是一个测试view");
         ConstraintBuilder.Builder(textView, (ConstraintLayout) findViewById(R.id.parent))
-                .size(0.2f, 0.3f).center().top(R.id.editText).bottom().left().right().build();
+                .size(0.2f, 0.3f).bias(0.3f, 0.7f).toParent().build();
     }
 }

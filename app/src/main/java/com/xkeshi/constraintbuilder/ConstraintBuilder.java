@@ -51,6 +51,14 @@ public class ConstraintBuilder {
         return _this;
     }
 
+    public ConstraintBuilder toParent() {
+        top();
+        left();
+        right();
+        bottom();
+        return _this;
+    }
+
     public ConstraintBuilder top(int id) {
         _this.layoutParams.topToTop = id;
         return _this;
